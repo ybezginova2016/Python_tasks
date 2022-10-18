@@ -18,8 +18,8 @@
 
 # Fixing the size of the Matrix.
 # Here it is of order 6 x 6
-R = 5
-C = 5
+R = 6
+C = 6
 # Function to find the maximum sum of hour glass
 def maxSum(arr):
     # considering the matrix also contains
