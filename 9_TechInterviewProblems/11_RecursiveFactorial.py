@@ -20,5 +20,10 @@ def fact_recur(n):
         return 1
     else:
         return n * fact_recur(n-1)
+# 5!
+# 5 * 4!
+# 3 * 2!
+# 2 * 1!
+# 1! = 1 base case
 
 print(fact_recur(n))
