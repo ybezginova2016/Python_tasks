@@ -12,3 +12,16 @@ def bubble(L):
 
 list1 = [1, 5, 0, 13, 2, 7, 5]
 print(bubble(list1))
+
+def swap(arr, i, j):
+    arr[i], arr[j] = arr[j], arr[i]
+
+def bubble_sort(arr):
+    i = len(arr)
+    while i > 1:
+        for j in range(i - 1):
+            if arr[j] > arr[j + 1]:
+                swap(arr, j, j + 1)
+        i -= 1
+
+print(bubble_sort([1, 5, 0, 13, 2, 7, 5]))

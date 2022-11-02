@@ -1,5 +1,11 @@
 """
 O(log(n))
+
+Каждый элемент массива на самом деле состоит из двух элементов: названия
+товара и его цены . Если отсортировать массив по имени, вы сможете
+провести по нему бинарный поиск для определения цены товара. Это означает,
+что поиск будет выполняться за время O(log п).
+
 Bisecton / Binary Search
 
 - When a list is sorted, we can divide the search scope in two
@@ -35,8 +41,6 @@ def search(l, e):
 # use the helper function to find the index of the value
     return bisect(0, len(l))
 
-def f2(x):
-    return (x + 1) * math.log10(x) - x ** 0.75
-print(search(f2, 0.000001))
-
-
+# def f2(x):
+#     return (x + 1) * math.log10(x) - x ** 0.75
+# print(search(f2, 0.000001))
