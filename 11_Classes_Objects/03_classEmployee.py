@@ -21,6 +21,9 @@ class Employee:
         self.last = last
         self.salary = salary
         self.email = email
+
+    def fullname(self):
+        return self.name + ' ' + self.last
 # Создаем экземпляр класса
 # Ссылка на этот экземпляр записывается в переменную emp
 emp1 = Employee('Joan', 'Thomas', 1500, 'jthomas@acme.it')
@@ -31,8 +34,11 @@ emp2 = Employee('Robert', 'Jordan', 1850, 'rjordan@acme.it')
 # emp.email = 'jthomas@acme.it'
 print(emp1.name, emp1.last, emp1.salary, emp1.salary)
 print(emp2.name, emp2.last, emp2.salary, emp2.salary)
+print(emp1.fullname())
+print(emp2.fullname())
 
 # Что пишут в теле класса? Описывают методы.
+
 # Метод - это та же функция, только вызываться она будет из
 # экземпляра класса.
 
