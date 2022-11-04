@@ -39,3 +39,12 @@ print(newlist5)
 
 newlist6 = ['hello' for x in fruits]
 print(newlist6)
+
+
+lst = [1, 2, 3, 4, 5, 6, 7]
+
+even_lst = [x for x in lst if x % 2 == 0]
+print(even_lst)
+
+square_lst = [x ** 2 for x in lst]
+print(square_lst)
