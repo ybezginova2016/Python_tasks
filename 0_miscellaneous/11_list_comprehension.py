@@ -48,3 +48,4 @@ print(even_lst)
 
 square_lst = [x ** 2 for x in lst]
 print(square_lst)
+
