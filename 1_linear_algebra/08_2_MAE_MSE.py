@@ -40,3 +40,65 @@ x_test = 6
 result = w[0] * x_test + w[1]
 print(result)
 print(w)
+
+# Задача 3
+# Рассчитайте наилучшие веса для заданного набора точек в многомерном
+# пространстве. Сохраните полученные веса в переменной w. Получите
+# предсказание для точки x_test, сохраните его в переменной result.
+# Выведите на экран полученные значения w и result.
+
+import numpy as np
+
+X = np.array(
+    [
+        [ 2,  1,  1],
+        [ 2, -4,  1],
+        [ 0, -3,  1],
+        [ 1, -4,  1],
+        [-2, -5,  1],
+        [-3, -1,  1]
+	]
+)
+
+y = np.array(
+	[
+        0.79360363,
+        4.12033812,
+        5.08632068,
+        8.02628284,
+        8.93128108,
+        9.73436965
+	]
+)
+
+x_test = [1, -2, 1]
+
+w = np.linalg.inv(X.T @ X) @ X.T @ y
+
+result = x_test @ w
+
+print(result)
+print(w)
+
+##### np.stack #####
+import numpy as np
+
+# Исходные векторы.
+A = np.array([1, 2])
+B = np.array([3, 4])
+
+print("Исходные векторы:")
+print(f"A: {A}")
+print()
+print(f"B: {B}")
+print()
+
+
+# Склейка по вертикали. Попробуйте изменить строку ниже.
+print(np.stack([A, B], axis=0))
+print()
+print(np.stack([B, A], axis=0))
+print()
+print(np.stack([A, B], axis=1))
+print()
+print(np.stack([B, A], axis=1))
