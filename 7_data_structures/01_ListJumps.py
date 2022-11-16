@@ -10,7 +10,6 @@
 #         else:
 #             print('out-of-bounds')
 
-
 def list_jumps1(jumps):
     index = 0
     for _ in jumps:
