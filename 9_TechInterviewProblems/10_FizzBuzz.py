@@ -17,3 +17,16 @@ for i in range(1, N+1):
         print('Buzz')
     else:
         print(i)
+
+#### v2 ####
+print()
+for num in range(1, 11):
+    if num % 5 ==0 and num % 3 == 0:
+        print('FizBuzz')
+    elif num % 3 == 0:
+        print('Fizz')
+    elif num % 5 == 0:
+        print('Buzz')
+    else:
+        print(num)
+
