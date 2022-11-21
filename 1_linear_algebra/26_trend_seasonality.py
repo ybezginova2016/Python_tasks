@@ -47,3 +47,13 @@ plt.show()
 # января 2018 года. Сделайте срез компоненты decomposed.seasonal
 # в промежутке от '2018-01-01' до '2018-01-15'. Затем вызовите
 # функцию plot().
+
+import pandas as pd
+from statsmodels.tsa.seasonal import seasonal_decompose
+import matplotlib.pyplot as plt
+
+data = pd.read_csv('/datasets/energy_consumption.csv', index_col=[0], parse_dates=[0])
+data.sort_index(inplace=True)
+
+decomposed = seasonal_decompose(data)
+decomposed.seasonal['2018-01-01':'2018-01-15'].plot()
