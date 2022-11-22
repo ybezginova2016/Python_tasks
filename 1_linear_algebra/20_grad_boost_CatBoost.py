@@ -56,7 +56,6 @@ from sklearn.model_selection import train_test_split
 from catboost import CatBoostClassifier
 from sklearn.metrics import roc_auc_score
 
-
 data = pd.read_csv('/datasets/travel_insurance.csv')
 
 features_train, features_valid, target_train, target_valid = train_test_split(
