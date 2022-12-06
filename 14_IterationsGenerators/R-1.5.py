@@ -3,10 +3,14 @@
 # on Python’s comprehension syntax and the built-in sum function.
 
 def sum_of_squares(n):
+    arr = []
     for i in range(0, n):
-        sq = i * i
-        res = sum(sq)
-        i += 1
-    return res
+        arr.append(i * i)
+    return sum(arr)
 
 print(sum_of_squares(4))
+
+def sum_of_sq(n):
+    return sum([i * i for i in range(0, n)])
+
+print(sum_of_sq(4))
