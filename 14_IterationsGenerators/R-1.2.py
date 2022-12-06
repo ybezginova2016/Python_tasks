@@ -13,6 +13,8 @@ print('True :)') if result is True else print('False!')
 
 
 def is_even2(k):
+    # bitwise-and
+    # 1 & 1 = 1 odd, 0 & 1 = 0 even
     return False if k & 1 else True
 
 print(is_even2(76))
