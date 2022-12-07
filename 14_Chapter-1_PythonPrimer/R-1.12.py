@@ -8,3 +8,9 @@ the built-in range function, that return a random choice from the given
 range. Using only the randrange function, implement your own version
 of the choice function.
 """
+import random
+def my_choice(iterable):
+    index = random.randrange(0, len(iterable)-1)
+    return iterable[index]
+
+print(my_choice([1, 6, -5, -100]))
