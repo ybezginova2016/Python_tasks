@@ -17,4 +17,5 @@ print(scale([1, 4, 5, 6], 2))
 """
 Guidelines for authoring useful docstrings are available
 at: http://www.python.org/dev/peps/pep-0257/
+
 """
