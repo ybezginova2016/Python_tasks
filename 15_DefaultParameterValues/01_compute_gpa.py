@@ -1,4 +1,5 @@
 # A Polymorphic Function
+
 # A function that computes a student’s GPA with a point value
 # system that can be customized as an optional parameter.
 def compute_gpa(grades, points={'A+' : 4.0,
@@ -23,11 +24,3 @@ def compute_gpa(grades, points={'A+' : 4.0,
     return total_points / num_courses
 
 print(compute_gpa(['B+', 'A-', 'C+', 'C+', 'C', 'D-']))
-
-def range(start, stop=None, step=1):
-    if stop is None:
-        stop = start
-        start = 0
-    return sum([start : stop])
-
-print(range(5, 9))
