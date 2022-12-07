@@ -1,12 +1,12 @@
 # R-1.6 (page 51)
 # Write a short Python function that takes a positive integer n and returns
-# the sum of the squares of all the odd positive integers smaller than n.
+# the sum of the squares of all the [odd] positive integers smaller than n.
 
 def positive_int(n):
     # n -= 1 # --> if while loop
     sum_of_sq = 0
     for i in range(0, n):
-        sum_of_sq += i * i if i & 1 == 0 else sum_of_sq
+        sum_of_sq += i * i if i & 1 == 1 else 0
     return sum_of_sq
 
 print(positive_int(5))
