@@ -5,4 +5,8 @@ from selfIdentifier import CreditCard
 
 cc = CreditCard('John Doe', '1st Bank', '5391 0375 9387 5309', 1000)
 
-print(cc)
+print(cc._limit)
+print(cc._bank)
+print(cc._customer)
+print(cc._balance)
+print(cc._account)

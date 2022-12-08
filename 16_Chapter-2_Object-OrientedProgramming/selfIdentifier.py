@@ -21,6 +21,14 @@ class CreditCard:
     """A consumer credit card."""
 
     def __init__(self, customer, bank, acnt, limit):
+        """
+        метод __init__ перегружает конструктор класса.
+        Конструктор - создание экземпляра класса.
+        :param customer:
+        :param bank:
+        :param acnt:
+        :param limit:
+        """
         """Create a new credit card instance.
 
         The initial balance is zero.

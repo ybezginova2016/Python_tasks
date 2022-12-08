@@ -5,6 +5,7 @@ in the same file. The mechanism for doing so was described in Section 1.11. Code
 that is shielded in a conditional construct of the form
 
 """
+import unittest
 from selfIdentifier import CreditCard
 # Testing the CreditCard class.
 
